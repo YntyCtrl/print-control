@@ -1,20 +1,23 @@
-import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
+import Backdrop from "../UI/Backdrop/Backdrop";
 import classes from "./Drawer.module.css";
 
+const Drawer = ({ open, closeDrawer }) => {
+  const drawerClasses = [
+    classes.content,
+    open ? classes.open : classes.close
+  ];
 
-
-const Drawer = ({ openDrawer }) => {
-    return (
-      <div className={classes.Toolbar}>
+  return (
+    <div className={classes.Drawer}>
+      <Backdrop show={open} click={closeDrawer} />
+      <div className={drawerClasses.join(" ")}>
         <Logo />
-        <nav>
-          <Nav />
-        </nav>
-        <DrawerOpen click={openDrawer} />
+        <Nav />
       </div>
-    );
-  }
-   
-  export default Drawer;
+    </div>
+  );
+}
+ 
+export default Drawer;
