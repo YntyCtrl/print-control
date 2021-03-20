@@ -1,11 +1,20 @@
+import "./App.css"
 
-import './App.css';
-import Leyout from './components/Layout/Leyout';
+
+const { default: Layout } = require("./components/Layout/Layout");
+
+
 
 function App() {
   return (
     <div className="App">
-      <Leyout />
+      <Layout>
+
+        Awesome builder by YntyCtrl<br/>
+      
+      </Layout>
+      
+
     </div>
   );
 }
