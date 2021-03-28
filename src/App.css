@@ -4,6 +4,8 @@
 body{
     margin: 0;
     font-family: 'Playfair Display', serif;
-    background-color: #b4fff5;
+    /* background-color: #b4fff5; */
+    background-image: url(./images/background-image.jpg) ;
+    background-size: cover;
 }
 /* background-color: #ebc1e765; */
