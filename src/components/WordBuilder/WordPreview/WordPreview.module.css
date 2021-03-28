@@ -1,0 +1,15 @@
+.WordPreview{
+    width: 600px;
+    height: 250px;
+    
+    background-color: #a8e499a8;
+    
+    
+    
+    
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
