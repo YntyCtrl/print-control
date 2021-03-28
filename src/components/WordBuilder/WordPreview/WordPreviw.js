@@ -1,11 +1,11 @@
 import classes from "./WordPreview.module.css";
 
-const WordPrewiew = () => {
+const WordPreview = () => {
     return ( 
-        <div className={classes.WordPrewiew}>
-
+        <div className={classes.WordPreview}>
+            
         </div>
     );
 }
  
-export default WordPrewiew;
+export default WordPreview;
