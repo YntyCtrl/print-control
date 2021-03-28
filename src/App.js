@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Layout>
 
-        Awesome builder by YntyCtrl<br/>
+        
       
       </Layout>
       
