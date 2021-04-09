@@ -20,5 +20,22 @@ button{
     width: 55px;
     border-radius: 10%;
     margin: 5px;
+    background-color: #ff0000e0;
+    color: #fffefe;
+    box-shadow: 0, 0, 0, 1 red;
+    border: solid outset 2px  #ff0000e0;
+    border-color:  #ff0000e0;
 
+}
+button:hover{
+    height: 40px;
+    width: 55px;
+    border-radius: 10%;
+    margin: 5px;
+    background-color: #ffc400e0;
+    border-color:  #ffc400e0;
+
+}
+button:hover{
+    outline: none;
 }
