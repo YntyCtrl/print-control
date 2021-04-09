@@ -1,5 +1,5 @@
 import { useState } from "react";
-import WordPreview from "../WordPreview/WordPreviw";
+
 import classes from "./WordControls.module.css";
 
 const WordControls = () => {
