@@ -62,7 +62,7 @@ const WordControls = () => {
     </div>
   );
   
-  const get = <WordPreview output={output } />
+  
   
   
   
