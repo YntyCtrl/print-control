@@ -1,55 +1,80 @@
+import { useState } from "react";
+import WordPreview from "../WordPreview/WordPreviw";
 import classes from "./WordControls.module.css";
 
 const WordControls = () => {
-    return (
-      <div className={classes.WordControls}>
-        <div className={classes.Keyboard}>
-          <button id="a">A</button>
-          <button id="b">B</button>
-          <button id="c">C</button>
-          <button id="d">D</button>
-          <button id="e">E</button>
-          <button id="f">F</button>
-          <button id="g">G</button>
-          <button id="h">H</button>
-          <button id="i">I</button>
-          <button id="j">J</button>
-          <button id="k">K</button>
-          <button id="l">L</button>
-          <button id="m">M</button>
-          <button id="n">N</button>
-          <button id="o">O</button>
-          <button id="p">P</button>
-          <button id="q">Q</button>
-          <button id="r">R</button>
-          <button id="s">S</button>
-          <button id="t">T</button>
-          <button id="u">U</button>
-          <button id="v">V</button>
-          <button id="w">W</button>
-          <button id="x">X</button>
-          <button id="y">Y</button>
-          <button id="z">Z</button>
-          <button id="z">,</button>
-          <button id="z">.</button>
-          <button id="z">@</button>
-          <button id="z">:</button>
+  const [output,setOutput] = useState("") ;
+  const buttons = (
+    <div className={classes.Keyboard}>
+      <button
+        onClick={() => setOutput(output + "A")}
+        className={classes.letter}
+      >
+        A
+      </button>
+      <button
+        onClick={() => setOutput(output + "B")}
+        className={classes.letter}
+      >
+        B
+      </button>
+      <button className={classes.letter}>C</button>
+      <button className={classes.letter}>D</button>
+      <button className={classes.letter}>E</button>
+      <button className={classes.letter}>F</button>
+      <button className={classes.letter}>G</button>
+      <button className={classes.letter}>H</button>
+      <button className={classes.letter}>I</button>
+      <button className={classes.letter}>J</button>
+      <button className={classes.letter}>K</button>
+      <button className={classes.letter}>L</button>
+      <button className={classes.letter}>M</button>
+      <button className={classes.letter}>N</button>
+      <button className={classes.letter}>O</button>
+      <button className={classes.letter}>P</button>
+      <button className={classes.letter}>Q</button>
+      <button className={classes.letter}>R</button>
+      <button className={classes.letter}>S</button>
+      <button className={classes.letter}>T</button>
+      <button className={classes.letter}>U</button>
+      <button className={classes.letter}>V</button>
+      <button className={classes.letter}>W</button>
+      <button className={classes.letter}>X</button>
+      <button className={classes.letter}>Y</button>
+      <button className={classes.letter}>Z</button>
+      <button className={classes.symbol}>,</button>
+      <button className={classes.symbol}>.</button>
+      <button className={classes.letter}>@</button>
+      <button className={classes.symbol}>:</button>
 
-          <button id="q">0</button>
-          <button id="r">1</button>
-          <button id="s">2</button>
-          <button id="t">3</button>
-          <button id="u">4</button>
-          <button id="v">5</button>
-          <button id="w">6</button>
-          <button id="x">7</button>
-          <button id="y">8</button>
-          <button id="z">9</button>
-          <button id="probel">_</button>
-          <button id="del">del</button>
-        </div>
-      </div>
-    );
+      <button className={classes.number}>0</button>
+      <button className={classes.number}>1</button>
+      <button className={classes.number}>2</button>
+      <button className={classes.number}>3</button>
+      <button className={classes.number}>4</button>
+      <button className={classes.number}>5</button>
+      <button className={classes.number}>6</button>
+      <button className={classes.number}>7</button>
+      <button className={classes.number}>8</button>
+      <button className={classes.number}>9</button>
+      <button>_</button>
+      <button>del</button>
+    </div>
+  );
+  
+  const get = <WordPreview output={output } />
+  
+  
+  
+  
+  
+  return (
+    <div className={classes.WordControls}>
+      {buttons}
+      {output}
+      
+    </div>
+  );
 }
  
 export default WordControls;
