@@ -71,7 +71,7 @@ const WordControls = () => {
   return (
     <div className={classes.WordControls}>
       {buttons}
-      {output}
+      
       
     </div>
   );
